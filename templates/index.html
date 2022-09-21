@@ -1,32 +1,46 @@
 <html>
-<body>
+<body style="background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(241, 90, 178))";>  
+    <div style="text-align: center">
     <form action="/predict" method="POST">
-        Mean Radius: <input type="text" name="radius_mean"><br>
-        Mean Texture: <input type="text" name="texture_mean"><br>
-        Mean Perimeter: <input type="text" name="perimeter_mean"><br>
-        Mean Area: <input type="text" name="area_mean"><br>
-        Mean Compactness: <input type="text" name="compactness_mean"><br>
-        Mean Concativity: <input type="text" name="concavity_mean"><br>
-        Mean Concave points: <input type="text" name="concave_points_mean"><br>
-        Mean Symmetry: <input type="text" name="symmetry_mean"><br>
-        radius se: <input type="text" name="radius_se"><br>
-        perimeter se: <input type="text" name="perimeter_se"><br>
-        area se: <input type="text" name="area_se"><br>
-        smoothness se: <input type="text" name="smoothness_se"><br>
-        compactness se: <input type="text" name="compactness_se"><br>
-        concave points se: <input type="text" name="concave_points_se"><br>
-        symmetry se: <input type="text" name="symmetry_se"><br>
-        fractal dimension se: <input type="text" name="fractal_dimension_se"><br>
-        radius worst: <input type="text" name="radius_worst"><br>
-        texture worst: <input type="text" name="texture_worst"><br>
-        perimeter worst: <input type="text" name="perimeter_worst"><br>
-        area worst: <input type="text" name="area_worst"><br>
-        smoothness worst: <input type="text" name="smoothness_worst"><br>
-        concavity worst: <input type="text" name="concavity_worst"><br>
-        concave points worst: <input type="text" name="concave_points_worst"><br>
-        symmetry worst: <input type="text" name="symmetry_worst"><br>
-        class:{{result}} <br>
-        <input type="submit" value="predict">
+        Mean Radius: <input type="text" name="radius_mean"><br><br>
+        Mean Texture: <input type="text" name="texture_mean"><br><br>
+        Mean Perimeter: <input type="text" name="perimeter_mean"><br><br>
+        Mean Area: <input type="text" name="area_mean"><br><br>
+        Mean Compactness: <input type="text" name="compactness_mean"><br><br>
+        Mean Concativity: <input type="text" name="concavity_mean"><br><br>
+        Mean Concave points: <input type="text" name="concave_points_mean"><br><br>
+        Mean Symmetry: <input type="text" name="symmetry_mean"><br><br>
+        radius se: <input type="text" name="radius_se"><br><br>
+        perimeter se: <input type="text" name="perimeter_se"><br><br>
+        area se: <input type="text" name="area_se"><br><br>
+        smoothness se: <input type="text" name="smoothness_se"><br><br>
+        compactness se: <input type="text" name="compactness_se"><br><br>
+        concave points se: <input type="text" name="concave_points_se"><br><br>
+        symmetry se: <input type="text" name="symmetry_se"><br><br>
+        fractal dimension se: <input type="text" name="fractal_dimension_se"><br><br>
+        radius worst: <input type="text" name="radius_worst"><br><br>
+        texture worst: <input type="text" name="texture_worst"><br><br>
+        perimeter worst: <input type="text" name="perimeter_worst"><br><br>
+        area worst: <input type="text" name="area_worst"><br><br>
+        smoothness worst: <input type="text" name="smoothness_worst"><br><br>
+        concavity worst: <input type="text" name="concavity_worst"><br><br>
+        concave points worst: <input type="text" name="concave_points_worst"><br><br>
+        symmetry worst: <input type="text" name="symmetry_worst"><br><br>
+        
+
+        <span style="border-top:thick green solid;border-bottom:thick green solid; padding-left:2px;padding-right:2px;">
+          
+          RESULT: {{result}}
+    </span>   
+       <br>
+       <br>
+       <input type="submit" value="predict" style="background-color:#c964f5">
+       <br>
+       <br>
+       Result:0 "Benign"<br>
+       <br>
+       Result:1 "Malignant->Further diagnoses required"
+    </div>
 
     </form>
 </body>
