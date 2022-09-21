@@ -1,0 +1,34 @@
+<html>
+<body>
+    <form action="/predict" method="POST">
+        Mean Radius: <input type="text" name="radius_mean"><br>
+        Mean Texture: <input type="text" name="texture_mean"><br>
+        Mean Perimeter: <input type="text" name="perimeter_mean"><br>
+        Mean Area: <input type="text" name="area_mean"><br>
+        Mean Compactness: <input type="text" name="compactness_mean"><br>
+        Mean Concativity: <input type="text" name="concavity_mean"><br>
+        Mean Concave points: <input type="text" name="concave_points_mean"><br>
+        Mean Symmetry: <input type="text" name="symmetry_mean"><br>
+        radius se: <input type="text" name="radius_se"><br>
+        perimeter se: <input type="text" name="perimeter_se"><br>
+        area se: <input type="text" name="area_se"><br>
+        smoothness se: <input type="text" name="smoothness_se"><br>
+        compactness se: <input type="text" name="compactness_se"><br>
+        concave points se: <input type="text" name="concave_points_se"><br>
+        symmetry se: <input type="text" name="symmetry_se"><br>
+        fractal dimension se: <input type="text" name="fractal_dimension_se"><br>
+        radius worst: <input type="text" name="radius_worst"><br>
+        texture worst: <input type="text" name="texture_worst"><br>
+        perimeter worst: <input type="text" name="perimeter_worst"><br>
+        area worst: <input type="text" name="area_worst"><br>
+        smoothness worst: <input type="text" name="smoothness_worst"><br>
+        concavity worst: <input type="text" name="concavity_worst"><br>
+        concave points worst: <input type="text" name="concave_points_worst"><br>
+        symmetry worst: <input type="text" name="symmetry_worst"><br>
+        class:{{result}} <br>
+        <input type="submit" value="predict">
+
+    </form>
+</body>
+
+</html>
